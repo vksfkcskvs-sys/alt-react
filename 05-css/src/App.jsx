@@ -1,8 +1,13 @@
 import React from 'react'
+import Button from './component/button/Button'
+import Header from './component/header/Header'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Header />
+      <Button />
+    </div>
   )
 }
 
