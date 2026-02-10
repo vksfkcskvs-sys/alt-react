@@ -17,7 +17,16 @@ const App = () => {
       img: 'https://images.unsplash.com/photo-1770191954591-952ab5c63e68?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       intro: '',
       tag: 'Underbanked'
-    }]
+    }, {
+      img: 'https://images.unsplash.com/photo-1770206124604-218d8cc535b5?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      intro: '',
+      tag: 'Reserved'
+    }, {
+      img: 'https://images.unsplash.com/photo-1770407297837-7cc2e8630599?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      intro: '',
+      tag: 'Specialized'
+    }
+  ]
   return (
     <div>
       <Section1 users={users} />
