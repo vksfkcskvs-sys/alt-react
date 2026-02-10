@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+input {
+  margin: 10px;
+  padding: 10px 20px;
+} 
+
+.box {
+  width: 500px;
+  height: 500px;
+  background-color: #a33d3d;
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 23px;
+}
+
+.page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(8, 74, 229);
+}
+
+.page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(214, 188, 13);
+}
