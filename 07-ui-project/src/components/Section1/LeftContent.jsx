@@ -1,15 +1,13 @@
 import React from 'react'
 import { ArrowUpRight } from 'lucide-react'
+import HeroText from './HeroText'
+import Arrow from './Arrow'
 
 const LeftContent = () => {
   return (
-    <div className='h-full w-1/4 bg-blue-600'>
-      <div>
-        <h3>Prospective <br /> <span>Customer</span> <br /> Segmentation</h3>
-      </div>
-      <div className='text-8xl'>
-        <ArrowUpRight />
-      </div>
+    <div className='h-full w-1/3 justify-between flex flex-col'>
+      <HeroText />
+      <Arrow />
     </div>
   )
 }
