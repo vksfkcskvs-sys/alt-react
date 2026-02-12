@@ -1,34 +1,66 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import React from 'react'
+// import { useState } from 'react'
+// import { useEffect } from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
+// const App = () => {
+
+//   const [num, setNum] = useState(0)
+//   const [num2, setNum2] = useState(100)
+
+//   useEffect(function() {
+//     console.log('useEfffect  is running');
+//   }, [num])
+
+//   return (
+//     <>
+//     <h1>num {num}</h1>
+//     <h2>num2 {num2}</h2>
+//     <div>App</div>
+//     <button onClick={() => {
+//       setNum(num + 10)
+//       setNum2(num2 + 10)
+//     }}>Click</button>
+//     </>
+//   )
+// }
+
+// export default App
+
+import React from 'react'
+import { useEffect } from 'react';
+import { useState } from 'react';
+
+const App = () => {
+
+  const [a, setA] = useState(0)
+  const [b, setB] = useState(0)
+  function aChanging() {
+    console.log('A ki value has changed');
+  }
+
+  function bChanging () {
+    console.log('B ki value has been changed')
+  }
+  
+  useEffect(function () {
+    aChanging()
+  }, [a])
+
+  useEffect(function() {
+    bChanging()
+  }, [b])
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <h1>A is {a}</h1>
+      <h1>B is {b}</h1>
+      <button onClick={() => {
+        setA(a + 1)
+      }}>Change A</button>
+      <button onClick={() => {
+        setB(b - 1)
+      }}>Change B</button>
+    </div>
   )
 }
 
