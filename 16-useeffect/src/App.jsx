@@ -45,7 +45,7 @@ const App = () => {
   useEffect(function () {
     aChanging()
   }, [a])
-
+  
   useEffect(function() {
     bChanging()
   }, [b])
