@@ -5,16 +5,25 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Product from './pages/Product'
+import NotFound from './pages/NotFound'
+import Men from './pages/Men'
+import Women from './pages/Women'
+import Courses from './pages/Courses'
 
 const App = () => {
   return (
     <div className='h-screen bg-black text-white'>
       <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/about' element={<About />}/>
-          <Route path='/product' element={<Product />}/>
-        </Routes>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/courses' element={<Courses />} />
+        <Route path='/product' element={<Product />}>
+          <Route path='men' element={<Men />} />
+          <Route path='women' element={<Women />} />
+        </Route>
+        <Route path='*' element={<NotFound />} />
+      </Routes>
       <Footer />
     </div>
   )
