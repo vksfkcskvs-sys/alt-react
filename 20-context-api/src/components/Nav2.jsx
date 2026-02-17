@@ -1,9 +1,11 @@
-import React from 'react'
-import { useContext } from 'react'
-import { ThemeDataContext } from '../context/ThemeContext'
+import { useContext } from "react"
+import { ThemeDataContext } from "../context/ThemeContext"
 
-const Nav2 = (props) => {
+const Nav2 = () => {
 
+    const [theme, setTheme] = useContext(ThemeDataContext)
+    console.log(setTheme);
+    
 
   return (
     <div className='nav2'>
@@ -11,7 +13,7 @@ const Nav2 = (props) => {
         <h4>About</h4>
         <h4>Contact</h4>
         <h4>Product</h4>
-        <h4>{props.theme}</h4>
+        <h4>{theme}</h4>
     </div>
   )
 }
